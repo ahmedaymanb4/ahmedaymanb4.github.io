@@ -9,10 +9,13 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
   
-  <!-- My calsses -->
+  <!-- Style -->
   <style>
     .rounded-photo {
         border-radius: 5%;
+    }
+    .small-logo-photo{
+      width: 50px;
     }
   </style>
 
@@ -20,8 +23,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
   <!-- Favicons -->
-  <link href="assets/img/me.jpg" rel="icon" class="rounded-photo">
-  <link href="assets/img/me.jpg" rel="apple-touch-icon" class="rounded-photo">
+  <link href="assets/img/me.jpg" rel="icon rounded-photo">
+  <link href="assets/img/me.jpg" rel="apple-touch-icon rounded-photo">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -45,84 +48,126 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
+  <!-- ======= Index/Header ======= -->
   <header id="header">
     <div class="container">
+      <h1>
+        <a href="index.html"> 
+          <img src="assets/img/logo.jpg" class="img-fluid rounded-photo small-logo-photo" alt="A photo of me" > <!-- Logo photo -->
+          Ahmed Ayman
+        </a>
+      </h1>
 
-      <h1><a href="index.html">Ahmed Ayman</a></h1>
       <h2>I'm a Muslim,
         <br>passionate <span>Computer Science Student</span>, <span>Data Science Learner</span>, and a <span>Competitive Programmer</span>
-        <br><br>from Al-Jizah, Egypt</h2>
-
+        <br><br>from Al-Jizah, Egypt
+      </h2>
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link active" href="#header">Home</a></li>
-          <li><a class="nav-link" href="#about_me">About me</a></li>
-          <li><a class="nav-link" href="#contact">Contact me</a></li>
+          <li><a class="nav-link" href="#about">About me</a></li>
           <li><a class="nav-link" href="#resume">Resume</a></li>
+          <li><a class="nav-link" href="#contact">Contact me</a></li>
+          <li><a class="nav-link" href="#credits">Design Credits</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+        <i class="bi bi-list mobile-nav-toggle"></i> 
       </nav><!-- .navbar -->
-
+      <!-- My social profiles -->
       <div class="social-links">
         <a href="https://www.linkedin.com/in/ahmedaymanb4/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
         <a href="https://github.com/ahmedaymanb4" class="github" target="_blank"><i class="bi bi-github"></i></a>
-        <a href="https://x.com/ahmedaymanb4" class="X" target="_blank"><i class="bi bi-twitter"></i></a>
+        <a href="https://x.com/ahmedaymanb4" class="" target="_blank"><i class="bi bi-twitter"></i></a>
       </div>
-
-    </div>
-  </header><!-- End Header -->
-
+    </div> <!-- End "container" div -->
+  </header> <!-- End Index/Header -->
+  
   <!-- ======= About me Section ======= -->
-  <section id="about_me" class="about_me">
-
+  <section id="about" class="about">
+    
     <!-- ======= About me Me ======= -->
     <div class="about-me container">
-
+      
       <div class="section-title">
-        <h2>About me</h2>
-        <p>Learn more about me</p>
+        <h2>Learn more</h2>
+        <p>about me</p>
       </div>
-
+      
       <div class="row">
-        <div class="col-lg-4" data-aos="fade-right">
+        <div class="col-lg-4 col-md-4" data-aos="fade-right">
           <img src="assets/img/me.jpg" class="img-fluid rounded-photo" alt="A photo of me">
         </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>Computer Science &amp; AI Student | Data Science Learner | Competitive Programmer</h3>
+        <div class="col-lg-8 col-md-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <h3>Computer Science &amp; Artificial Intelligence Student | Data Science Learner | Competitive Programmer</h3>
           <p class="fst-italic">
           </p>
-          <div class="row">
-            <div class="col-lg-6">
+          <div class="row"> <!--Interests-->
+            <div class="col-lg-6"> <!--Interest Item-->
               <ul>
                 <li><i class="bi bi-chevron-right"></i> <strong>Birthdate:</strong> <span>Apr 2004</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Available for:</strong> <span>Internships, Part-time Jobs <br>(even if non career-related), </span></li>
               </ul>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6"> <!--Interest Item-->
               <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Study:</strong> <span>Computer Science</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Study:</strong> <span>Computer Science &amp; Artificial Intelligence</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>High school:</strong> <span>STEM School</span></li>
               </ul>
             </div>
-          </div>
+          </div> <!--end of Interests-->
           <p>
-            <hr>
+            <hr style="color: #1b8a6e;">
             I’m a passionate, computer science learner who continuously promotes both his technical & soft skills. I like to participate in a lot of activities that aim to teach me something, whether they’re extracurricular or not. At the same time, I'm a computer science student who tries to be a curious, self-paced learner, and to gain knowledge at university in alignment with market-demanded skills.
-            <hr>
             I always care about gaining experience. So, if you have questions to ask or comments to make, I'll be carefully listening.
           </p>
         </div>
       </div>
-
+      
     </div><!-- End About Me -->
+
+    <!-- ======= Interests ======= -->
+    <div class="interests container">
+
+      <div class="section-title">
+        <h2>Interests</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 col-md-4">
+          <div class="icon-box">
+            <i class="bi bi-moon" style="color: #04614a;"></i>
+            <h3>Islamic knowledge</h3>
+          </div>
+        </div>
+        
+        <div class="col-lg-6 col-md-4">
+          <div class="icon-box">
+            <i class="fa fa-dumbbell" style="color: #04614a;"></i>
+            <h3>Light Workouts</h3>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- End Interests -->
+
+  </section><!-- End About me Section -->
+  
+  <!-- ======= Resume Section ======= -->
+  <section id="resume" class="resume">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Resume</h2>
+        <p>Check My Resume</p>
+      </div>
 
     <!-- ======= Skills  ======= -->
     <div class="skills container">
 
       <div class="section-title">
-        <h2>Skills</h2>
-        <p style = "font-size: 16px;">I estimated my skills based on the <a href="https://gobemore.co/the-five-levels-of-mastery-and-how-good-is-good-enough/" target="_blank">five levels of competency..</a></p>
+        <h3>Skills</h3>
+        <p style = "font-size: 16px;">I estimated my skills based on the 
+          <!-- "Link" svg icon-->
+          <a href="https://gobemore.co/the-five-levels-of-mastery-and-how-good-is-good-enough/" target="_blank">🔗five levels of competency..</a></p>
         <!--
         Novice (Beginner): A beginner with no or very limited experience. You typically rely heavily on rules and guidance.
         Advanced Beginner (Basic): You have basic experience and can perform tasks independently, though still rely on guidelines.
@@ -182,97 +227,11 @@
         </div>
 
       </div>
-
     </div><!-- End Skills -->
 
-    <!-- ======= Interests ======= -->
-    <div class="interests container">
-
-      <div class="section-title">
-        <h2>Interests</h2>
-      </div>
 
       <div class="row">
-        <div class="col-lg-6 col-md-4">
-          <div class="icon-box">
-            <i class="bi bi-moon" style="color: #04614a;"></i>
-            <h3>Islamic knowledge</h3>
-          </div>
-        </div>
-        
-        <div class="col-lg-6 col-md-4">
-          <div class="icon-box">
-            <i class="fa fa-dumbbell" style="color: #04614a;"></i>
-            <h3>Light Workouts</h3>
-          </div>
-        </div>
-      </div>
-
-    </div><!-- End Interests -->
-
-  </section><!-- End About me Section -->
-
-  <!-- ======= Contact Section ======= -->
-  <section id="contact" class="contact">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Contact</h2>
-        <p>Contact Me</p>
-      </div>
-
-      <div class="row mt-2">
-
-        <!--<div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-share-alt"></i>-->
-            <h3>Social Profiles</h3>
-            <div class="social-links">
-              <a href="https://www.linkedin.com/in/ahmedaymanb4/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
-              <a href="https://github.com/ahmedaymanb4" class="github" target="_blank"><i class="bi bi-github"></i></a>
-              <a href="https://www.x.com/ahmedaymanb4/" class="X" target="_blank"><i class="bi bi-twitter"></i></a>
-            </div>
-          <!--</div>
-        </div>-->
-        
-      <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
-        <div class="row">
-          <div class="col-md-6 form-group">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-          </div>
-          <div class="col-md-6 form-group mt-3 mt-md-0">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-          </div>
-        </div>
-        <div class="form-group mt-3">
-          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-        </div>
-        <div class="form-group mt-3">
-          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-        </div>
-        <div class="my-3">
-          <div class="loading">Loading</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Your message has been sent. Thank you!</div>
-        </div>
-        <div class="text-center"><button type="submit">Send Message</button></div>
-      </form>
-
-    </div>
-
-  </section><!-- End Contact Section -->
-
-  <!-- ======= Resume Section ======= -->
-  <section id="resume" class="resume">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Resume</h2>
-        <p>Check My Resume</p>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-5"> <!-- Column 1, Resume -->
           <h3 class="resume-title">Sumary</h3>
           <div class="resume-item pb-0">
             <h4>Ahmed Ayman</h4>
@@ -299,9 +258,9 @@
             <p><em>Luxor, Egypt</em></p>
           </div><!--end of resume item div-->
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-7"> <!-- Column 2, Resume -->
           <h3 class="resume-title">Professional Experience</h3>
-          <!--
+          <!-- RESUME_ITEM:
           <div class="resume-item">
             <h4>TITLE</h4>
             <p>Company</p>
@@ -389,14 +348,75 @@
     </div>
   </section><!-- End Resume Section -->
 
-  <div class="credits">
-    <!-- All the links in the footer should remain intact. -->
-    <!-- You can delete the links only if you purchased the pro version. -->
-    <!-- Licensing information: https://bootstrapmade.com/license/ -->
-    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/personal-free-resume-bootstrap-template/ -->
-    Designed by <a href="https://bootstrapmade.com/ " target="_blank">BootstrapMade</a>
-  </div>
 
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>Contact Me</p>
+      </div>
+
+      <div class="row mt-2">
+        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-share-alt"></i>
+            <h3>On my Social Profiles</h3>
+            <!-- My social profiles -->
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/ahmedaymanb4/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+              <a href="https://github.com/ahmedaymanb4" class="github" target="_blank"><i class="bi bi-github"></i></a>
+              <a href="https://x.com/ahmedaymanb4" class="" target="_blank"><i class="bi bi-twitter"></i></a>
+            </div> <!-- end (My social profiles) div-->
+          </div> <!-- end "info-box" div -->
+        </div> <!-- end "col-md-6 mt-4 mt-md-0 d-flex align-items-stretch" div -->
+      </div> <!-- end "row mt-2" div -->
+        
+      <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="col-md-6 form-group mt-3 mt-md-0">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+          </div>
+        </div>
+        <div class="form-group mt-3">
+          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-group mt-3">
+          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+        </div>
+        <div class="my-3">
+          <div class="loading">Loading</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Your message has been sent. Thank you!</div>
+        </div>
+        <div class="text-center"><button type="submit">Send Message</button></div>
+      </form>
+
+    </div><!-- End "container" Section -->
+  </section><!-- End Contact Section -->
+
+  <!--==================================================================================================================================-->
+  <section id="credits">
+      <div class="credits">
+        This website design is quoted from <a href="https://bootstrapmade.com/ " target="_blank">BootstrapMade</a>
+      </div>
+  </section>
+
+  <!-- Scripts -->
+  <script>
+    const snipMySocialProfiles = `
+      <div class="social links MySocialProfiles">
+        <a href="https://www.linkedin.com/in/ahmedaymanb4/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/ahmedaymanb4" class="github" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://x.com/ahmedaymanb4" class="" target="_blank"><i class="bi bi-twitter"></i></a>
+      </div>`;
+      document.getElementById('snipMySocialProfiles').innerHTML = snipMySocialProfiles;
+  </script>
+  
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -110,7 +110,7 @@ h6 {
 }
 
 #header .social-links a {
-  font-size: 16px;
+  font-size: 26px; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,8 +119,8 @@ h6 {
   line-height: 1;
   margin-right: 8px;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 55px;
+  height: 55px;
 }
 
 #header .social-links a:hover {
@@ -192,12 +192,9 @@ h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-/**
+/*# OLD Navigation Menu --------------------------------------------------------------
+--------------------------------------------------------------
 * Desktop Navigation 
-*/
 .navbar {
   padding: 0;
   margin-top: 35px;
@@ -267,9 +264,9 @@ h6 {
   color: #fff;
 }
 
-/**
-* Mobile Navigation 
-*/
+
+* Mobile Navigation: 
+
 .mobile-nav-toggle {
   color: #fff;
   font-size: 28px;
@@ -337,6 +334,320 @@ h6 {
   font-size: 16px;
   position: relative;
 }
+end of OLD Navigation Menu */
+
+/*# Navigation Menu, ChatGPT V1 --------------------------------------------------------------
+
+--------------------------------------------------------------
+/ **
+* Desktop Navigation 
+* /
+.navbar {
+  padding: 0;
+  margin-top: 35px;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar li+li {
+  margin-left: 30px;
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #18d26e;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar a:hover:before,
+.navbar li:hover>a:before,
+.navbar .active:before {
+  visibility: visible;
+  width: 25px;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: #fff;
+}
+
+/ **
+* Mobile Navigation: 
+* /
+.mobile-nav-toggle {
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+  position: fixed;
+  right: 15px;
+  top: 15px;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: none; /* Hide the toggle button * /
+  }
+
+  .navbar ul {
+    display: flex; /* Display the navbar items as flex * /
+    flex-direction: row; /* Align items in a row * /
+    padding: 0;
+  }
+
+  .navbar li {
+    padding: 0;
+    margin-left: 20px; /* Adjust spacing as needed * /
+  }
+
+  .navbar a {
+    padding: 0;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+.navbar-mobile {
+  position: static;
+  overflow: visible;
+  background: none;
+  transition: none;
+  z-index: auto;
+  margin-top: 35px;
+}
+
+.navbar-mobile ul {
+  display: flex;
+  position: static;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  padding: 0;
+  overflow: visible;
+  border: none;
+}
+
+.navbar-mobile li {
+  padding: 0;
+}
+
+.navbar-mobile li+li {
+  margin-left: 30px;
+}
+
+.navbar-mobile a,
+.navbar-mobile a:focus {
+  font-size: 16px;
+  position: relative;
+}
+*/
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+  padding: 0;
+  margin-top: 35px;
+  position: relative;
+  z-index: 1000; /* Ensures navbar is above other content */
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar li+li {
+  margin-left: 30px;
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #18d26e;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar a:hover:before,
+.navbar li:hover>a:before,
+.navbar .active:before {
+  visibility: visible;
+  width: 25px;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: #fff;
+}
+
+/**
+* Mobile Navigation: 
+*/
+.mobile-nav-toggle {
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+  position: fixed;
+  right: 15px;
+  top: 15px;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: none; /* Hide the toggle button */
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensures navbar is above other content */
+  }
+
+  .navbar ul {
+    display: flex; /* Display the navbar items as flex */
+    flex-direction: row; /* Align items in a row */
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar li {
+    padding: 0;
+    margin-left: 20px; /* Adjust spacing as needed */
+  }
+
+  .navbar a {
+    padding: 15px 10px; /* Add padding for touch devices */
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  /* Add margin to the content to avoid overlap with fixed navbar */
+  section {
+    margin-top: 70px; /* Adjust based on the height of your navbar */
+  }
+}
+
+.navbar-mobile {
+  position: static;
+  overflow: visible;
+  transition: none;
+  z-index: auto;
+  margin-top: 35px;
+}
+
+.navbar-mobile ul {
+  display: flex;
+  position: static;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  padding: 0;
+  overflow: visible;
+  border: none;
+}
+
+.navbar-mobile li {
+  padding: 0;
+}
+
+.navbar-mobile li+li {
+  margin-left: 30px;
+}
+
+.navbar-mobile a,
+.navbar-mobile a:focus {
+  font-size: 16px;
+  position: relative;
+}
+
 
 /*--------------------------------------------------------------
 # Sections General
@@ -438,48 +749,6 @@ section .container {
 
 .about-me .content p:last-child {
   margin-bottom: 0;
-}
-
-/*--------------------------------------------------------------
-# Counts
---------------------------------------------------------------*/
-.counts {
-  padding: 70px 0 60px;
-}
-
-.counts .count-box {
-  padding: 30px 30px 25px 30px;
-  width: 100%;
-  position: relative;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.08);
-}
-
-.counts .count-box i {
-  position: absolute;
-  top: -25px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 24px;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 12px;
-  color: #18d26e;
-  border-radius: 50px;
-  line-height: 0;
-}
-
-.counts .count-box span {
-  font-size: 36px;
-  display: block;
-  font-weight: 600;
-  color: #fff;
-}
-
-.counts .count-box p {
-  padding: 0;
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
 }
 
 /*--------------------------------------------------------------
@@ -1161,15 +1430,10 @@ section .container {
 # Credits
 --------------------------------------------------------------*/
 .credits {
-  position: fixed;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  padding: 15px;
-  text-align: right;
-  font-size: 13px;
+  padding: 1px;
+  text-align:center;
+  font-size: 26px;
   color: #fff;
-  z-index: 999999;
 }
 
 @media (max-width: 992px) {
